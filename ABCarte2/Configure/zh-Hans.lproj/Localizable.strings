@@ -1,0 +1,178 @@
+/* 
+  Localizable.strings
+  ABCarte2
+
+  Created by Long on 2019/05/14.
+  Copyright © 2019 Oluxe. All rights reserved.
+*/
+
+//general
+"OK" = "确定";
+"Cancel" = "取消";
+"English" = "英语";
+"Japanese" = "日语";
+"Chinese" = "中文";
+"Please select the content" = "请选择内容";
+"Register" = "登録";
+"Save" = "保存";
+"Undefined" = "不明";
+"Male" = "男";
+"Female" = "女";
+"years old" = "岁";
+"Update" = "更新";
+"Unregistered" = "Unregistered";
+"Edit" = "編集";
+"Message" = "Message";
+
+//login scene
+"LOGIN" = "登入";
+"OR" = "或";
+"LOGIN BY QR CODE" = "用二维码登录";
+"Other ways to contact us" = "和我们联络";
+"Please input User ID" = "请输入用户ID";
+"Please input Password" = "请输入密码";
+"WRONG QR CODE" = "二维码无效";
+"LOGIN WITH USERNAME" = "用用户ID登入";
+
+//main scene
+"Show All" = "全内容显示";
+"Add Customer" = "注册顾客";
+"Calendar" = "日历";
+"Select" = "选择";
+"Search" = "搜索";
+"Messenger" = "Messenger";
+"Logout" = "登出";
+"Setting" = "设置";
+"Sync" = "更新";
+"Stamp Reg" = "印章笔记登录";
+"Shop" = "商店";
+"Video" = "视频";
+"Document" = "文件";
+"Info" = "详情";
+"Complete" = "确定";
+"Delete" = "删除";
+"Please input Customer's Surname" = "请输入姓拼音";
+"Name" = "姓名";
+"Sex" = "性别";
+"Last Visited" = "最新来店日";
+"Birthdate" = "生日日期";
+"Cus's No" = "顾客号码";
+"Total" = "总计";
+"Customer Management" = "顾客管理";
+"Contact" = "联络";
+"First Visited" = "初次来店日";
+"View / Edit" = "详情";
+
+//setting scene
+"Language" = "语言";
+"Theme" = "主题";
+"Secret Memo" = "秘密笔记";
+"Device" = "设备";
+"Account" = "用户";
+"Application Info" = "应用详情";
+"Application Theme" = "应用主题";
+"Secret Memo Password" = "秘密笔记密码";
+"Current Password" = "当前密码";
+"New Password" = "新密码";
+"Device Info" = "设备详情";
+"Model" = "机型";
+"iOS Version" = "iOS版本";
+"Device ID" = "设备ID";
+"Internet Status" = "连接状态";
+"Erase Device" = "本设备内记录删除";
+"Do you want to erase the data from this Device" = "データ引継ぎを行いますか?";
+"To erase the data, tap [OK] and enter the password. Please log into App with your new iPad after you completely logout." = "データを引継ぐ場合は [OK] をタップして、パスワードを入力してください。自動ログアウト後に新しい iPad で アプリ にログインしてください。";
+"User Info" = "用户详情";
+"User ID" = "用户ID";
+"Username" = "用户名";
+"Free Memo" = "自由笔记";
+"Stamp Memo" = "印章笔记";
+"No Data" = "无资料";
+"Used" = "已用容量";
+"Remained" = "可用容量";
+"Drawing Type" = "描画タイプ";
+
+//calendar scene
+"Date" = "日期";
+"History of Visit" = "访问记录";
+"Day" = "日";
+"Month" = "月";
+"Year" = "年";
+
+//stamp registration scene
+"Stamp Memo Registration" = "印章笔记登录";
+
+//reg/edit scene
+"Customer Info Registration/Modification" = "注册/编辑顾客详情";
+"Customer's Name" = "顾客姓名";
+"Customer's Name (Kana)" = "顾客姓名(Kana)";
+"Customer Number" = "顾客号码";
+"Emergency Contact No" = "紧急联络";
+"Responsible" = "负责人";
+"Modify" = "编辑";
+"Created Date" = "注册日期";
+"Last Modified Date" = "更新日期";
+"Address" = "住所";
+"E-mail" = "电子邮件地址";
+"Blood Type" = "血型";
+"Rank" = "级别";
+"Hobby" = "爱好";
+"Photo Insert" = "头像插入";
+"Convert" = "更新住所";
+"Note 1" = "备注 1";
+"Note 2" = "备注 2";
+"Note" = "备注";
+"Please input secret memo password" = "请输入密码";
+"Access" = "访问秘密笔记";
+"Postal Code" = "邮政编码";
+"Building Name - Room No" = "建筑名";
+"Prefecture" = "州";
+"City" = "市";
+"Please input 7 numbers of Postal Code" = "请输入正确的邮政编码";
+"The address can not be found" = "住所搜索失败";
+"A new data of this customer has existed on the Server, Do you want to refresh to get new data?" = "こちらの顧客の情報は、すでに別のスタッフにより編集されています。同期にて新しいデータを取得後、再度編集をお願いします。";
+"Take a Photo" = "照片摄影";
+"Camera not found" = "相机链接失败";
+"Choose Photo from Device" = "从存储选择";
+"Choose Photo from Gallery" = "从顾客图库选择";
+"Delete Representative Image" = "头像删除";
+"Please input last name" = "请输入顾客姓";
+"Please input first name" = "请输入顾客名";
+"Last Name" = "请输入顾客姓拼音";
+"First Name" = "请输入顾客名拼音";
+"Please input" = "请输入";
+"Please input contact number" = "电话号码";
+"Please input name" = "请输入姓名";
+"Basic" = "基本详情";
+"Private Info" = "个人详情";
+"Remarks" = "备注";
+
+//carte list
+"List of Karte" = "图标清单";
+"Image Management" = "图像管理";
+"Drawing" = "绘画画面";
+"Comparison" = "比较画面";
+"List of Image" = "图库";
+"Day Visit" = "来店日 :";
+
+//carte image list
+"Take Photo" = "照片摄影";
+"Camera Roll" = "存储图库";
+
+//comparison
+"Left Right" = "左右相比";
+"Up Down" = "上下相比";
+"Tranmission" = "透过相比";
+
+//stamp register scene
+"Title Update" = "编辑标题";
+"Add New" = "添加记录";
+
+//Chat
+"Send Karte's Photos" = "Send Karte's Photos";
+
+//Staff Management
+"Staff Management" = "スタッフ管理";
+
+//Bed Management
+"Bed Management" = "設備管理";

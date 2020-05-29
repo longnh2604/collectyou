@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RelatedProductCell" customModule="Laide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNy-x9-hh7">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9L8-VG-tGD">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="fAx-TZ-oCQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf2-F8-4qX" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                                <rect key="frame" x="30" y="0.0" width="160" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="cBX-HF-LGb"/>
+                                </constraints>
+                                <state key="normal" title="商品選択"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRelatedProductSelect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5Bl-Tr-AP4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zka-xm-yJW">
+                                <rect key="frame" x="190" y="0.0" width="140" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="lxI-Jt-wYN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qU8-NI-xad">
+                                <rect key="frame" x="330" y="0.0" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="XDb-8D-Mp7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="手入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2L-B9-ug4">
+                                <rect key="frame" x="410" y="0.0" width="80" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="8pp-uH-Bat"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onBeginInputRelatedProduct:" destination="KGk-i7-Jjw" eventType="editingDidBegin" id="Img-Rv-Noe"/>
+                                    <action selector="onQuantityChange:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="FVc-pO-E6W"/>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="xPe-ao-cW3"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yh6-Ko-Lri">
+                                <rect key="frame" x="490" y="0.0" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ZBr-Wx-en4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bmD-BI-bxQ">
+                                <rect key="frame" x="570" y="0.0" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="u89-ht-vF3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRh-cs-yvA">
+                                <rect key="frame" x="650" y="0.0" width="118" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gNy-x9-hh7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BSB-59-tCO"/>
+                    <constraint firstAttribute="bottom" secondItem="gNy-x9-hh7" secondAttribute="bottom" id="bjY-tu-3CY"/>
+                    <constraint firstAttribute="trailing" secondItem="gNy-x9-hh7" secondAttribute="trailing" id="ndb-Ci-LNI"/>
+                    <constraint firstItem="gNy-x9-hh7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vNR-yE-F58"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnProduct" destination="rf2-F8-4qX" id="bxO-f5-RZb"/>
+                <outlet property="tfNoProduct" destination="P2L-B9-ug4" id="Doq-RE-neo"/>
+                <outlet property="tfOrder" destination="9L8-VG-tGD" id="QAm-Zb-fkX"/>
+                <outlet property="tfProductCategory" destination="zka-xm-yJW" id="4Ml-69-OrM"/>
+                <outlet property="tfProductSubTotal" destination="yh6-Ko-Lri" id="bYu-ul-SPi"/>
+                <outlet property="tfProductTax" destination="bmD-BI-bxQ" id="F37-QC-iGm"/>
+                <outlet property="tfProductTotal" destination="aRh-cs-yvA" id="RuF-bO-Dzl"/>
+                <outlet property="tfProductUPrice" destination="qU8-NI-xad" id="jyJ-dH-aPN"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="121"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserMessageCell" rowHeight="80" id="KGk-i7-Jjw" customClass="UserMessageCell" customModule="Laide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_no_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="M9x-Qd-ZSY">
+                        <rect key="frame" x="20" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="IGC-fj-uvP"/>
+                            <constraint firstAttribute="height" constant="60" id="i68-K9-oyd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMz-87-Ruk">
+                        <rect key="frame" x="100" y="29.5" width="320" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d1-Fk-Yt4">
+                        <rect key="frame" x="440" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="fMB-ad-6Qq"/>
+                            <constraint firstAttribute="width" constant="40" id="hKf-kg-Nok"/>
+                        </constraints>
+                        <state key="normal" image="icon_uncheck_box.png"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M9x-Qd-ZSY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="5c8-7f-OFJ"/>
+                    <constraint firstItem="4d1-Fk-Yt4" firstAttribute="leading" secondItem="rMz-87-Ruk" secondAttribute="trailing" constant="20" id="F7x-8S-QCX"/>
+                    <constraint firstAttribute="trailing" secondItem="4d1-Fk-Yt4" secondAttribute="trailing" constant="20" id="MhE-Tz-6gy"/>
+                    <constraint firstItem="4d1-Fk-Yt4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RwP-bj-pPf"/>
+                    <constraint firstItem="rMz-87-Ruk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZQQ-gn-TDG"/>
+                    <constraint firstItem="M9x-Qd-ZSY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="edb-Xw-i3i"/>
+                    <constraint firstItem="rMz-87-Ruk" firstAttribute="leading" secondItem="M9x-Qd-ZSY" secondAttribute="trailing" constant="20" id="wBw-zd-ULj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnCheckBox" destination="4d1-Fk-Yt4" id="Tez-XE-ELa"/>
+                <outlet property="imvCus" destination="M9x-Qd-ZSY" id="xDN-Oy-bBD"/>
+                <outlet property="lblCusName" destination="rMz-87-Ruk" id="gD1-qg-zXJ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_uncheck_box.png" width="300" height="300"/>
+        <image name="img_no_photo.png" width="24" height="24"/>
+    </resources>
+</document>

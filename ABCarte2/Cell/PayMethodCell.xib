@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PayMethodCell" rowHeight="100" id="Qk3-GV-Zj4" customClass="PayMethodCell" customModule="ATTENDER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qk3-GV-Zj4" id="0gi-Sd-tXD">
+                <rect key="frame" x="0.0" y="0.0" width="700" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93m-7S-Bh1">
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="100"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Sr-hU-Qpi">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="lmf-GD-wui"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qY0-Iq-4QG" customClass="RoundUIView" customModule="ATTENDER" customModuleProvider="target">
+                                <rect key="frame" x="50" y="0.0" width="300" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rPi-VJ-afa">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Od0-6a-FdA">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFO-y3-bUl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                                        <state key="normal" title="お支払い方法"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="412-lr-ypO">
+                                                        <rect key="frame" x="150" y="0.0" width="150" height="50"/>
+                                                        <state key="normal" title="支払回数　？回"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UD5-ia-WRD">
+                                                <rect key="frame" x="0.0" y="50" width="300" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSw-A7-hZp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                                        <state key="normal" title="なし"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKd-o7-23q">
+                                                        <rect key="frame" x="150" y="0.0" width="150" height="50"/>
+                                                        <state key="normal" title="毎月　？月引落"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="N1z-tc-PYD"/>
+                                    <constraint firstAttribute="trailing" secondItem="rPi-VJ-afa" secondAttribute="trailing" id="YQ2-Mh-Ac1"/>
+                                    <constraint firstAttribute="bottom" secondItem="rPi-VJ-afa" secondAttribute="bottom" id="fVW-gf-nIo"/>
+                                    <constraint firstItem="rPi-VJ-afa" firstAttribute="top" secondItem="qY0-Iq-4QG" secondAttribute="top" id="nxt-AD-0ux"/>
+                                    <constraint firstItem="rPi-VJ-afa" firstAttribute="leading" secondItem="qY0-Iq-4QG" secondAttribute="leading" id="zeL-Js-c75"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4H3-qo-Imo" customClass="RoundUIView" customModule="ATTENDER" customModuleProvider="target">
+                                <rect key="frame" x="350" y="0.0" width="200" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DTz-9J-2Hd">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1XG-ud-zUc">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncL-5C-dZR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                        <state key="normal" title="カレンダー"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-eU-9Pb">
+                                                        <rect key="frame" x="100" y="0.0" width="100" height="50"/>
+                                                        <state key="normal" title="初回"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SDS-yF-Tok">
+                                                <rect key="frame" x="0.0" y="50" width="200" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqg-Fy-Hc1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                        <state key="normal" title="カレンダー"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA5-bx-Mhm">
+                                                        <rect key="frame" x="100" y="0.0" width="100" height="50"/>
+                                                        <state key="normal" title="通常各回"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="DTz-9J-2Hd" firstAttribute="top" secondItem="4H3-qo-Imo" secondAttribute="top" id="NyD-aj-azf"/>
+                                    <constraint firstItem="DTz-9J-2Hd" firstAttribute="leading" secondItem="4H3-qo-Imo" secondAttribute="leading" id="Qpo-sb-5YF"/>
+                                    <constraint firstAttribute="trailing" secondItem="DTz-9J-2Hd" secondAttribute="trailing" id="a0a-Rh-9RP"/>
+                                    <constraint firstAttribute="width" constant="200" id="ej0-PV-C3Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="DTz-9J-2Hd" secondAttribute="bottom" id="pC6-Co-O2I"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gx-RT-0Ak">
+                                <rect key="frame" x="550" y="0.0" width="150" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DHX-2b-jq3">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t56-9g-E6p">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCk-Hg-Zg6">
+                                                <rect key="frame" x="0.0" y="50" width="150" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DHX-2b-jq3" secondAttribute="bottom" id="ABg-Al-1PX"/>
+                                    <constraint firstItem="DHX-2b-jq3" firstAttribute="leading" secondItem="1Gx-RT-0Ak" secondAttribute="leading" id="Ggg-Be-pAb"/>
+                                    <constraint firstAttribute="trailing" secondItem="DHX-2b-jq3" secondAttribute="trailing" id="ZR2-Y8-e0i"/>
+                                    <constraint firstItem="DHX-2b-jq3" firstAttribute="top" secondItem="1Gx-RT-0Ak" secondAttribute="top" id="yLp-Pf-WOq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="93m-7S-Bh1" firstAttribute="top" secondItem="0gi-Sd-tXD" secondAttribute="top" id="McK-c9-iE1"/>
+                    <constraint firstAttribute="bottom" secondItem="93m-7S-Bh1" secondAttribute="bottom" id="UZn-7f-sK3"/>
+                    <constraint firstItem="93m-7S-Bh1" firstAttribute="leading" secondItem="0gi-Sd-tXD" secondAttribute="leading" id="cIN-5o-OwH"/>
+                    <constraint firstAttribute="trailing" secondItem="93m-7S-Bh1" secondAttribute="trailing" id="k6v-jm-aKc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="6pL-nF-KBx"/>
+            <point key="canvasLocation" x="137.68115942028987" y="184.82142857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

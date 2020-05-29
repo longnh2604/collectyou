@@ -1,0 +1,180 @@
+/* 
+  Localizable.strings
+  ABCarte2
+
+  Created by Long on 2019/05/14.
+  Copyright © 2019 Oluxe. All rights reserved.
+*/
+
+//general
+"OK" = "OK";
+"Cancel" = "Cancel";
+"English" = "English";
+"Japanese" = "Japanese";
+"Chinese" = "Chinese";
+"Please select the content" = "Please select the content";
+"Register" = "Register";
+"Save" = "Save";
+"Undefined" = "Undefined";
+"Male" = "Male";
+"Female" = "Female";
+"years old" = "years old";
+"Update" = "Update";
+"Unregistered" = "Unregistered";
+"Edit" = "Edit";
+"Message" = "Message";
+
+//login scene
+"LOGIN" = "LOGIN";
+"OR" = "OR";
+"LOGIN BY QR CODE" = "LOGIN BY QR CODE";
+"Other ways to contact us" = "Other ways to contact us";
+"Please input User ID" = "Please input User ID";
+"Please input Password" = "Please input Password";
+"WRONG QR CODE" = "WRONG QR CODE";
+"LOGIN WITH USERNAME" = "LOGIN WITH USERNAME";
+
+//main scene
+"Show All" = "Show All";
+"Add Customer" = "Add Customer";
+"Calendar" = "Calendar";
+"Select" = "Select";
+"Search" = "Search";
+"Messenger" = "Messenger";
+"Logout" = "Logout";
+"Setting" = "Setting";
+"Sync" = "Sync";
+"Stamp Reg" = "Stamp Reg";
+"Shop" = "Shop";
+"Video" = "Video";
+"Document" = "Document";
+"Info" = "Info";
+"Complete" = "Complete";
+"Delete" = "Delete";
+"Please input Customer's Surname" = "Please input Customer's Surname";
+"Name" = "Name";
+"Sex" = "Sex";
+"Last Visited" = "Last Visited";
+"Birthdate" = "Birthdate";
+"Cus's No" = "Cus's No";
+"Total" = "Total";
+"Customer Management" = "Customer Management";
+"Contact" = "Contact";
+"First Visited" = "First Visited";
+"View / Edit" = "View / Edit";
+
+//setting scene
+"Language" = "Language";
+"Theme" = "Theme";
+"Secret Memo" = "Secret Memo";
+"Device" = "Device";
+"Account" = "Account";
+"Application Info" = "Application Info";
+"Application Theme" = "Application Theme";
+"Secret Memo Password" = "Secret Memo Password";
+"Current Password" = "Current Password";
+"New Password" = "New Password";
+"Device Info" = "Device Info";
+"Model" = "Model";
+"iOS Version" = "iOS Version";
+"Device ID" = "Device ID";
+"Internet Status" = "Internet Status";
+"Erase Device" = "Erase Device";
+"Do you want to erase the data from this Device" = "データ引継ぎを行いますか?";
+"To erase the data, tap [OK] and enter the password. Please log into App with your new iPad after you completely logout." = "データを引継ぐ場合は [OK] をタップして、パスワードを入力してください。自動ログアウト後に新しい iPad で アプリ にログインしてください。";
+"User Info" = "User Info";
+"User ID" = "User ID";
+"Username" = "Username";
+"Free Memo" = "Free Memo";
+"Stamp Memo" = "Stamp Memo";
+"No Data" = "No Data";
+"Used" = "Used";
+"Remained" = "Remained";
+"Drawing Type" = "Drawing Type";
+
+//calendar scene
+"Calendar" = "Calendar";
+"Date" = "Date";
+"History of Visit" = "History of Visit";
+"Day" = "Day";
+"Month" = "Month";
+"Year" = "Year";
+
+//stamp registration scene
+"Stamp Memo Registration" = "Stamp Memo Registration";
+
+//reg/edit scene
+"Customer Info Registration/Modification" = "Customer Info Registration/Modification";
+"Customer's Name" = "Customer's Name";
+"Customer's Name (Kana)" = "Name(Kana)";
+"Customer Number" = "Customer Number";
+"Emergency Contact No" = "Emergency Contact No";
+"Responsible" = "Responsible";
+"Modify" = "Modify";
+"Created Date" = "Created Date";
+"Last Modified Date" = "Last Modified Date";
+"Sex" = "Sex";
+"Address" = "Address";
+"E-mail" = "E-mail";
+"Blood Type" = "Blood Type";
+"Rank" = "Rank";
+"Hobby" = "Hobby";
+"Photo Insert" = "Photo Insert";
+"Convert" = "Convert";
+"Note 1" = "Note 1";
+"Note 2" = "Note 2";
+"Note" = "Note";
+"Please input secret memo password" = "Please input secret memo password";
+"Access" = "Access";
+"Postal Code" = "Postal Code";
+"Building Name - Room No" = "Building Name - Room No";
+"Prefecture" = "Prefecture";
+"City" = "City";
+"Please input 7 numbers of Postal Code" = "Please input 7 numbers of Postal Code";
+"The address can not be found" = "The address can not be found";
+"A new data of this customer has existed on the Server, Do you want to refresh to get new data?" = "こちらの顧客の情報は、すでに別のスタッフにより編集されています。同期にて新しいデータを取得後、再度編集をお願いします。";
+"Take a Photo" = "Take a Photo";
+"Camera not found" = "Camera not found";
+"Choose Photo from Device" = "Choose Photo from Device";
+"Choose Photo from Gallery" = "Choose Photo from Gallery";
+"Delete Representative Image" = "Delete Representative Image";
+"Please input last name" = "Please input last name";
+"Please input first name" = "Please input first name";
+"Last Name" = "Last Name";
+"First Name" = "First Name";
+"Please input" = "Please input";
+"Please input contact number" = "Please input contact number";
+"Please input name" = "Please input name";
+"Basic" = "Basic";
+"Private Info" = "Private Info";
+"Remarks" = "Remarks";
+
+//carte list
+"List of Karte" = "List of Karte";
+"Image Management" = "Image Management";
+"Drawing" = "Drawing";
+"Comparison" = "Comparison";
+"List of Image" = "List of Image";
+"Day Visit" = "Day Visit :";
+
+//carte image list
+"Take Photo" = "Take Photo";
+"Camera Roll" = "Camera Roll";
+
+//comparison
+"Left Right" = "Left Right";
+"Up Down" = "Up Down";
+"Tranmission" = "Tranmission";
+
+//stamp register scene
+"Title Update" = "Title Update";
+"Add New" = "Add New";
+
+//Chat
+"Send Karte's Photos" = "Send Karte's Photos";
+
+//Staff Management
+"Staff Management" = "Staff Management";
+
+//Bed Management
+"Bed Management" = "Bed Management";

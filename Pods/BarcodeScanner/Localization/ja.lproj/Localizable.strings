@@ -1,0 +1,7 @@
+"SCAN_BARCODE_TITLE" = "QRコードの読込";
+"BUTTON_CLOSE" = "閉じる";
+"BUTTON_SETTINGS" = "設定";
+"INFO_DESCRIPTION_TEXT" = "QRコードを枠内にかざしてください。";
+"INFO_LOADING_TITLE" = "接続中";
+"NO_PRODUCT_ERROR_TITLE" = "リンク先が見つかりませんでした。";
+"ASK_FOR_PERMISSION_TEXT" = "QRコードを読込むために、カメラの許可が必要です。";

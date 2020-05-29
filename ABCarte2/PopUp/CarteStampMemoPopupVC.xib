@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarteStampMemoPopupVC" customModule="ATTENDER" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="ZiZ-L0-7Md" id="5F9-a3-w53"/>
+                <outlet property="btnDelete" destination="3N5-L4-ieY" id="suL-Qh-00m"/>
+                <outlet property="btnSave" destination="byZ-Oo-cKM" id="XnQ-1N-CVP"/>
+                <outlet property="tblKeywords" destination="RPt-lF-qND" id="WOf-dt-z47"/>
+                <outlet property="tfTitle" destination="kJ2-re-cmJ" id="Xx8-Aw-Wge"/>
+                <outlet property="tvContent" destination="pQH-v5-pc6" id="HIr-4M-6Cz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kJ2-re-cmJ">
+                    <rect key="frame" x="20" y="20" width="250" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="NU6-CV-xcN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQH-v5-pc6">
+                    <rect key="frame" x="20" y="74" width="250" height="456"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RPt-lF-qND">
+                    <rect key="frame" x="300" y="67.5" width="280" height="462.5"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キーワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdJ-WB-Vmd">
+                    <rect key="frame" x="300" y="27" width="280" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Vt3-Sq-BcC">
+                    <rect key="frame" x="50" y="550" width="500" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byZ-Oo-cKM" customClass="RoundButton" customModule="ATTENDER" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                            <color key="backgroundColor" red="0.111260334" green="0.4740668079" blue="0.2915784333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="登録 ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onSave:" destination="-1" eventType="touchUpInside" id="yQe-zb-JpM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-L0-7Md" customClass="RoundButton" customModule="ATTENDER" customModuleProvider="target">
+                            <rect key="frame" x="200" y="0.0" width="100" height="30"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="H90-uc-qQu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3N5-L4-ieY" customClass="RoundButton" customModule="ATTENDER" customModuleProvider="target">
+                            <rect key="frame" x="400" y="0.0" width="100" height="30"/>
+                            <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                            <state key="normal" title="削除">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onDelete:" destination="-1" eventType="touchUpInside" id="qhQ-a6-jTV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="500" id="5RS-lZ-TkJ"/>
+                        <constraint firstAttribute="height" constant="30" id="fuB-MA-Tj3"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kJ2-re-cmJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="7Uy-EE-ARy"/>
+                <constraint firstItem="pQH-v5-pc6" firstAttribute="trailing" secondItem="kJ2-re-cmJ" secondAttribute="trailing" id="AzN-M9-Xdh"/>
+                <constraint firstItem="Vt3-Sq-BcC" firstAttribute="top" secondItem="pQH-v5-pc6" secondAttribute="bottom" constant="20" id="HPy-XN-f6o"/>
+                <constraint firstItem="zdJ-WB-Vmd" firstAttribute="leading" secondItem="kJ2-re-cmJ" secondAttribute="trailing" constant="30" id="Kq6-W9-fhC"/>
+                <constraint firstItem="zdJ-WB-Vmd" firstAttribute="centerY" secondItem="kJ2-re-cmJ" secondAttribute="centerY" id="LBi-B7-7TK"/>
+                <constraint firstItem="kJ2-re-cmJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LCO-Ms-QgY"/>
+                <constraint firstItem="Vt3-Sq-BcC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="O0h-sM-J9f"/>
+                <constraint firstItem="pQH-v5-pc6" firstAttribute="leading" secondItem="kJ2-re-cmJ" secondAttribute="leading" id="PBC-we-yiq"/>
+                <constraint firstItem="pQH-v5-pc6" firstAttribute="top" secondItem="kJ2-re-cmJ" secondAttribute="bottom" constant="20" id="TGQ-b8-LU0"/>
+                <constraint firstItem="Vt3-Sq-BcC" firstAttribute="top" secondItem="RPt-lF-qND" secondAttribute="bottom" constant="20" id="YJS-jz-tXP"/>
+                <constraint firstItem="RPt-lF-qND" firstAttribute="trailing" secondItem="zdJ-WB-Vmd" secondAttribute="trailing" id="dTd-v8-3EF"/>
+                <constraint firstItem="RPt-lF-qND" firstAttribute="leading" secondItem="zdJ-WB-Vmd" secondAttribute="leading" id="fbi-9U-yu7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Vt3-Sq-BcC" secondAttribute="bottom" constant="20" id="hw0-Fd-iGg"/>
+                <constraint firstItem="RPt-lF-qND" firstAttribute="top" secondItem="zdJ-WB-Vmd" secondAttribute="bottom" constant="20" id="x4x-E1-mA5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zdJ-WB-Vmd" secondAttribute="trailing" constant="20" id="y2I-lX-pw0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="157.03125" y="34.5703125"/>
+        </view>
+    </objects>
+</document>

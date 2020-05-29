@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextInputPopupVC" customModule="ABCarte2" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="jZS-1D-YyY" id="Har-2w-NHF"/>
+                <outlet property="btnSave" destination="LZV-kO-j1f" id="VTT-4W-TmD"/>
+                <outlet property="tvContent" destination="dg1-FH-RZp" id="t0Z-Fq-XSN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dg1-FH-RZp">
+                    <rect key="frame" x="10" y="10" width="330" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZV-kO-j1f" customClass="RoundButton" customModule="ABCarte2" customModuleProvider="target">
+                    <rect key="frame" x="70" y="220" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Pzd-5I-ie4"/>
+                        <constraint firstAttribute="width" constant="90" id="vD9-xd-nYK"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onSave:" destination="-1" eventType="touchUpInside" id="8Pc-QW-DSn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZS-1D-YyY" customClass="RoundButton" customModule="ABCarte2" customModuleProvider="target">
+                    <rect key="frame" x="190" y="220" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CCr-xA-x7H"/>
+                        <constraint firstAttribute="width" constant="90" id="UH6-f3-Q8R"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="LQj-SZ-yWS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jZS-1D-YyY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="60" id="81B-cf-igy"/>
+                <constraint firstItem="dg1-FH-RZp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="KD4-8O-DsJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dg1-FH-RZp" secondAttribute="trailing" constant="10" id="PWZ-Xy-2ZF"/>
+                <constraint firstItem="LZV-kO-j1f" firstAttribute="top" secondItem="dg1-FH-RZp" secondAttribute="bottom" constant="10" id="d5c-Yr-Wc6"/>
+                <constraint firstItem="dg1-FH-RZp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="f8U-bT-8pQ"/>
+                <constraint firstItem="LZV-kO-j1f" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-60" id="fae-eO-6OS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jZS-1D-YyY" secondAttribute="bottom" constant="10" id="oWG-wj-nn3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LZV-kO-j1f" secondAttribute="bottom" constant="10" id="xqV-fZ-uLz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="124.8" y="-33.283358320839582"/>
+        </view>
+    </objects>
+</document>

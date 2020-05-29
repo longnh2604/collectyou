@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageTemplatePopupVC" customModule="Laide" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSave" destination="w7s-o5-nJM" id="pgb-kF-FXf"/>
+                <outlet property="lblCategory" destination="0Re-oy-ZJE" id="JfB-jX-DnB"/>
+                <outlet property="tfTitleCategoryItem" destination="aRj-te-Stp" id="34M-sr-vZS"/>
+                <outlet property="tvContent" destination="wZU-ut-9il" id="Ul8-c8-Fab"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="680" height="550"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7s-o5-nJM" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                    <rect key="frame" x="215" y="510" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="01N-iP-SkD"/>
+                        <constraint firstAttribute="height" constant="30" id="hHX-mo-L77"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onSave:" destination="-1" eventType="touchUpInside" id="EZN-sX-by9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejE-Ez-dIH" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                    <rect key="frame" x="370" y="510" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="X0D-6H-bNl"/>
+                        <constraint firstAttribute="height" constant="30" id="q6b-Jh-XWV"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.066666666669999999" green="0.1647058824" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClose:" destination="-1" eventType="touchUpInside" id="DFD-66-OBy"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wZU-ut-9il">
+                    <rect key="frame" x="20" y="203" width="640" height="287"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="OJo-z4-ysr">
+                    <rect key="frame" x="171.5" y="153" width="337" height="30"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUu-2g-8Ht" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.63715274209999995" blue="0.54859352549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Cyq-T3-Bz9"/>
+                                <constraint firstAttribute="width" constant="150" id="Rin-N3-tvW"/>
+                            </constraints>
+                            <state key="normal" title="顧客名">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onAutoGenerate:" destination="-1" eventType="touchUpInside" id="d4A-6W-N17"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQa-K5-yRG" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                            <rect key="frame" x="187" y="0.0" width="150" height="30"/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.63715274209999995" blue="0.54859352549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="MYL-AN-Bcu"/>
+                                <constraint firstAttribute="height" constant="30" id="UvF-mt-gfL"/>
+                            </constraints>
+                            <state key="normal" title="店舗名">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onAutoGenerate:" destination="-1" eventType="touchUpInside" id="NE7-iN-nva"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリー：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qt-LB-DoL">
+                    <rect key="frame" x="20" y="20" width="100" height="19.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Yq9-JI-PzG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Re-oy-ZJE">
+                    <rect key="frame" x="125" y="20" width="535" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メッセージタイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU1-Qn-mLs">
+                    <rect key="frame" x="20" y="59.5" width="147" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="記入してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRj-te-Stp">
+                    <rect key="frame" x="20" y="99" width="640" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.95294117647058818" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aRj-te-Stp" firstAttribute="top" secondItem="aU1-Qn-mLs" secondAttribute="bottom" constant="20" id="66D-Eh-JqR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wZU-ut-9il" secondAttribute="trailing" constant="20" id="GhG-Kr-4zu"/>
+                <constraint firstItem="aRj-te-Stp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MX7-24-9pd"/>
+                <constraint firstItem="0Re-oy-ZJE" firstAttribute="leading" secondItem="0qt-LB-DoL" secondAttribute="trailing" constant="5" id="MY3-Pt-RuN"/>
+                <constraint firstItem="ejE-Ez-dIH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="80" id="WKZ-gP-uw9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Re-oy-ZJE" secondAttribute="trailing" constant="20" id="XaL-tG-Gfu"/>
+                <constraint firstItem="OJo-z4-ysr" firstAttribute="top" secondItem="aRj-te-Stp" secondAttribute="bottom" constant="20" id="aUZ-5d-77L"/>
+                <constraint firstItem="0Re-oy-ZJE" firstAttribute="centerY" secondItem="0qt-LB-DoL" secondAttribute="centerY" id="bBP-Dk-kdg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ejE-Ez-dIH" secondAttribute="bottom" constant="10" id="bJj-OL-YeE"/>
+                <constraint firstItem="aU1-Qn-mLs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bXD-GN-KL0"/>
+                <constraint firstItem="w7s-o5-nJM" firstAttribute="top" secondItem="wZU-ut-9il" secondAttribute="bottom" constant="20" id="c4v-BA-WCV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aRj-te-Stp" secondAttribute="trailing" constant="20" id="dkI-JV-qk2"/>
+                <constraint firstItem="wZU-ut-9il" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gAy-J4-EqK"/>
+                <constraint firstItem="w7s-o5-nJM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-80" id="hhQ-4N-8Q1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="w7s-o5-nJM" secondAttribute="bottom" constant="10" id="k6E-Cy-k9N"/>
+                <constraint firstItem="OJo-z4-ysr" firstAttribute="centerX" secondItem="aRj-te-Stp" secondAttribute="centerX" id="oSs-EO-DHo"/>
+                <constraint firstItem="wZU-ut-9il" firstAttribute="top" secondItem="OJo-z4-ysr" secondAttribute="bottom" constant="20" id="tlv-Ei-C4s"/>
+                <constraint firstItem="0qt-LB-DoL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="uFp-JQ-Kkh"/>
+                <constraint firstItem="0qt-LB-DoL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="x8z-BV-RSJ"/>
+                <constraint firstItem="aU1-Qn-mLs" firstAttribute="top" secondItem="0qt-LB-DoL" secondAttribute="bottom" constant="20" id="yh9-p4-TeY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="117.96875" y="-14.648437499999998"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HierarchyPopup" customModule="ABCarte2" customModuleProvider="target">
+            <connections>
+                <outlet property="tblHierarchy" destination="WO3-Iv-Qf1" id="6p7-g7-xQT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WO3-Iv-Qf1" customClass="CITreeView" customModule="CITreeView">
+                    <rect key="frame" x="10" y="81" width="380" height="549"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="treeViewDataSource" destination="-1" id="HYh-vM-hTl"/>
+                        <outlet property="treeViewDelegate" destination="-1" id="xCa-Qy-vQF"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店舗リスト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mN7-pu-qV7">
+                    <rect key="frame" x="156.5" y="40" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5S-S4-T4f" customClass="RoundButton" customModule="ABCarte2" customModuleProvider="target">
+                    <rect key="frame" x="230" y="650" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ycw-hb-hEt"/>
+                        <constraint firstAttribute="width" constant="100" id="fWD-om-eeQ"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.066666666669999999" green="0.1647058824" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClose:" destination="-1" eventType="touchUpInside" id="dIn-HH-nl9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgc-bj-T2b" customClass="RoundButton" customModule="ABCarte2" customModuleProvider="target">
+                    <rect key="frame" x="75" y="650" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.70588235290000001" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="FNF-27-RFy"/>
+                        <constraint firstAttribute="height" constant="30" id="K9q-IQ-8Pg"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onSave:" destination="-1" eventType="touchUpInside" id="p2m-o7-paT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Mgc-bj-T2b" secondAttribute="bottom" constant="20" id="1Vf-we-OYS"/>
+                <constraint firstItem="H5S-S4-T4f" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="80" id="5Hk-PU-r6c"/>
+                <constraint firstItem="WO3-Iv-Qf1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="DHz-ks-sj8"/>
+                <constraint firstItem="mN7-pu-qV7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="R6c-kx-74e"/>
+                <constraint firstItem="Mgc-bj-T2b" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-80" id="Tep-DR-aGe"/>
+                <constraint firstItem="WO3-Iv-Qf1" firstAttribute="top" secondItem="mN7-pu-qV7" secondAttribute="bottom" constant="20" id="WC1-eu-nB9"/>
+                <constraint firstItem="H5S-S4-T4f" firstAttribute="top" secondItem="WO3-Iv-Qf1" secondAttribute="bottom" constant="20" id="YZa-kD-Btb"/>
+                <constraint firstItem="mN7-pu-qV7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cRS-zC-K3X"/>
+                <constraint firstItem="Mgc-bj-T2b" firstAttribute="top" secondItem="WO3-Iv-Qf1" secondAttribute="bottom" constant="20" id="gKZ-SN-u78"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WO3-Iv-Qf1" secondAttribute="trailing" constant="10" id="hDT-7U-yhe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="H5S-S4-T4f" secondAttribute="bottom" constant="20" id="k1t-jb-tyf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="63.28125" y="-1.171875"/>
+        </view>
+    </objects>
+</document>

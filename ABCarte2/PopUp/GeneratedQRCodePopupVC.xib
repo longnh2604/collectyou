@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeneratedQRCodePopupVC" customModule="ABCarte2" customModuleProvider="target">
+            <connections>
+                <outlet property="imvQRANDROID" destination="khh-dT-qGR" id="DEM-8u-iCn"/>
+                <outlet property="imvQRCode" destination="DhY-Cr-QxF" id="TE7-qN-luq"/>
+                <outlet property="imvQRIOS" destination="1kc-V8-yCH" id="Daw-HZ-SJO"/>
+                <outlet property="tfPassword" destination="fbw-fA-X4A" id="Fw5-UG-1Rg"/>
+                <outlet property="tfShop" destination="ssO-oG-RWt" id="2vP-Mo-25Q"/>
+                <outlet property="tfUserID" destination="med-So-S6K" id="gBF-Ia-YAm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="850"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DhY-Cr-QxF">
+                    <rect key="frame" x="175" y="444.5" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="9bD-n8-uOM"/>
+                        <constraint firstAttribute="height" constant="150" id="Pmt-Uf-5hq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyT-G3-o9a">
+                    <rect key="frame" x="111" y="604.5" width="278" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="BV5-Nb-cRA"/>
+                    </constraints>
+                    <string key="text">上記のQRコードでログイン出来ない
+お客様は、ユーザーIDとパスワードを
+入力して、ログインしてください。</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="med-So-S6K">
+                    <rect key="frame" x="233" y="730" width="156" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0uk-6x-onM"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbw-fA-X4A">
+                    <rect key="frame" x="233" y="770" width="156" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ユーザーID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFq-8z-twV">
+                    <rect key="frame" x="111" y="734.5" width="92" height="21.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-87-FyH">
+                    <rect key="frame" x="111" y="774.5" width="92" height="21.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96e-cL-oLH" customClass="RoundButton" customModule="ABCarte2" customModuleProvider="target">
+                    <rect key="frame" x="205" y="810" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.70588235290000001" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="got-AI-nQe"/>
+                        <constraint firstAttribute="height" constant="30" id="r9D-RW-39W"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClose:" destination="-1" eventType="touchUpInside" id="kJC-g1-06d"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店 ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HR-ux-tO2">
+                    <rect key="frame" x="111" y="694.5" width="92" height="21.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssO-oG-RWt">
+                    <rect key="frame" x="233" y="690" width="156" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1c6-ZR-5gZ"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V40-J8-VSS">
+                    <rect key="frame" x="103.5" y="30" width="293.5" height="84.5"/>
+                    <string key="text">QRコードを読込んで
+アプリをインストールして下さい。</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1kc-V8-yCH">
+                    <rect key="frame" x="60" y="184.5" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="VeD-bd-5UL"/>
+                        <constraint firstAttribute="width" constant="120" id="txr-Pd-TB3"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khh-dT-qGR">
+                    <rect key="frame" x="320" y="184.5" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="4K1-6f-B4v"/>
+                        <constraint firstAttribute="width" constant="120" id="oRs-Le-D3S"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_apple_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="zjj-zr-uG6">
+                    <rect key="frame" x="95" y="124.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bcO-mF-AhT"/>
+                        <constraint firstAttribute="width" constant="50" id="wP2-5n-OCq"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_android_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vUw-QG-umH">
+                    <rect key="frame" x="355" y="124.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ROI-wv-32M"/>
+                        <constraint firstAttribute="width" constant="50" id="Ydw-TR-ReA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziv-Mm-SUg">
+                    <rect key="frame" x="158.5" y="364.5" width="183.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Pzi-Zw-krY"/>
+                    </constraints>
+                    <string key="text">QRコードを読込んで
+ログインして下さい。</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.95294117649999999" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DhY-Cr-QxF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1HB-BQ-Bte"/>
+                <constraint firstItem="vUw-QG-umH" firstAttribute="top" secondItem="V40-J8-VSS" secondAttribute="bottom" constant="10" id="1sY-j1-FxS"/>
+                <constraint firstItem="zjj-zr-uG6" firstAttribute="top" secondItem="V40-J8-VSS" secondAttribute="bottom" constant="10" id="3L6-wB-qjD"/>
+                <constraint firstItem="med-So-S6K" firstAttribute="trailing" secondItem="IyT-G3-o9a" secondAttribute="trailing" id="682-TD-NHt"/>
+                <constraint firstItem="96e-cL-oLH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="6qt-Wc-FXl"/>
+                <constraint firstItem="khh-dT-qGR" firstAttribute="top" secondItem="vUw-QG-umH" secondAttribute="bottom" constant="10" id="7zV-PX-5jC"/>
+                <constraint firstItem="IyT-G3-o9a" firstAttribute="top" secondItem="DhY-Cr-QxF" secondAttribute="bottom" constant="10" id="8Qy-02-sJG"/>
+                <constraint firstItem="fbw-fA-X4A" firstAttribute="height" secondItem="med-So-S6K" secondAttribute="height" id="9Hb-mB-PrS"/>
+                <constraint firstItem="9HR-ux-tO2" firstAttribute="trailing" secondItem="EFq-8z-twV" secondAttribute="trailing" id="9Wz-p8-nOE"/>
+                <constraint firstItem="med-So-S6K" firstAttribute="centerY" secondItem="EFq-8z-twV" secondAttribute="centerY" id="Bgq-9z-3cR"/>
+                <constraint firstItem="DhY-Cr-QxF" firstAttribute="top" secondItem="ziv-Mm-SUg" secondAttribute="bottom" constant="30" id="CYm-eJ-QB4"/>
+                <constraint firstItem="9HR-ux-tO2" firstAttribute="leading" secondItem="IyT-G3-o9a" secondAttribute="leading" id="DpT-c0-lTy"/>
+                <constraint firstItem="V40-J8-VSS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Edu-79-IAd"/>
+                <constraint firstItem="OWL-87-FyH" firstAttribute="leading" secondItem="EFq-8z-twV" secondAttribute="leading" id="HQT-ZX-jHs"/>
+                <constraint firstItem="vUw-QG-umH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="130" id="QbY-0y-5Ol"/>
+                <constraint firstItem="med-So-S6K" firstAttribute="top" secondItem="ssO-oG-RWt" secondAttribute="bottom" constant="10" id="QgO-T0-L1r"/>
+                <constraint firstItem="ziv-Mm-SUg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RXN-ll-hKC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="96e-cL-oLH" secondAttribute="bottom" constant="10" id="SBN-Ps-Ubb"/>
+                <constraint firstItem="96e-cL-oLH" firstAttribute="top" secondItem="fbw-fA-X4A" secondAttribute="bottom" constant="10" id="SSR-4n-Agr"/>
+                <constraint firstItem="1kc-V8-yCH" firstAttribute="top" secondItem="zjj-zr-uG6" secondAttribute="bottom" constant="10" id="Tf6-bu-Rad"/>
+                <constraint firstItem="fbw-fA-X4A" firstAttribute="top" secondItem="med-So-S6K" secondAttribute="bottom" constant="10" id="TfK-rk-Y5y"/>
+                <constraint firstItem="V40-J8-VSS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="V80-WX-ajL"/>
+                <constraint firstItem="1kc-V8-yCH" firstAttribute="centerX" secondItem="zjj-zr-uG6" secondAttribute="centerX" id="Xrs-Cc-JvM"/>
+                <constraint firstItem="ssO-oG-RWt" firstAttribute="centerY" secondItem="9HR-ux-tO2" secondAttribute="centerY" id="Y7S-8V-Qmh"/>
+                <constraint firstItem="IyT-G3-o9a" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bi6-Gk-Qg6"/>
+                <constraint firstItem="EFq-8z-twV" firstAttribute="leading" secondItem="IyT-G3-o9a" secondAttribute="leading" id="eAs-rS-BzD"/>
+                <constraint firstItem="fbw-fA-X4A" firstAttribute="leading" secondItem="OWL-87-FyH" secondAttribute="trailing" constant="30" id="eHg-Jt-j7o"/>
+                <constraint firstItem="fbw-fA-X4A" firstAttribute="centerY" secondItem="OWL-87-FyH" secondAttribute="centerY" id="f0A-jT-8C1"/>
+                <constraint firstItem="med-So-S6K" firstAttribute="leading" secondItem="EFq-8z-twV" secondAttribute="trailing" constant="30" id="hGU-7c-dTh"/>
+                <constraint firstItem="fbw-fA-X4A" firstAttribute="trailing" secondItem="med-So-S6K" secondAttribute="trailing" id="rIe-tq-PhG"/>
+                <constraint firstItem="ziv-Mm-SUg" firstAttribute="top" secondItem="1kc-V8-yCH" secondAttribute="bottom" constant="60" id="rQO-uv-CGR"/>
+                <constraint firstItem="khh-dT-qGR" firstAttribute="centerX" secondItem="vUw-QG-umH" secondAttribute="centerX" id="vOc-w1-5pn"/>
+                <constraint firstItem="ssO-oG-RWt" firstAttribute="leading" secondItem="9HR-ux-tO2" secondAttribute="trailing" constant="30" id="vfH-To-V6x"/>
+                <constraint firstItem="zjj-zr-uG6" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-130" id="w5O-De-rzX"/>
+                <constraint firstItem="ssO-oG-RWt" firstAttribute="trailing" secondItem="IyT-G3-o9a" secondAttribute="trailing" id="xVa-ud-Maq"/>
+                <constraint firstItem="9HR-ux-tO2" firstAttribute="top" secondItem="IyT-G3-o9a" secondAttribute="bottom" constant="20" id="ylW-hf-IPt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="0.78125" y="43.359375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_android_logo.png" width="96" height="96"/>
+        <image name="icon_apple_logo.png" width="96" height="96"/>
+    </resources>
+</document>

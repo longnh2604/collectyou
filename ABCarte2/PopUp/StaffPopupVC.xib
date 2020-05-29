@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StaffPopupVC" customModule="Laide" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCompany" destination="Y4R-C2-Hnu" id="912-lG-Zoy"/>
+                <outlet property="btnDelete" destination="jOm-T8-XsT" id="Iaa-qG-DQb"/>
+                <outlet property="btnGender" destination="De5-LG-wnc" id="R4L-Il-zGd"/>
+                <outlet property="btnPhotoUpload" destination="M29-d2-Z2K" id="Cvr-mV-ObL"/>
+                <outlet property="btnRole" destination="qe9-i9-FsO" id="jR6-St-qZ1"/>
+                <outlet property="imvStaff" destination="Hr6-Jz-Ntg" id="Lpp-uf-B9S"/>
+                <outlet property="tfStaffName" destination="NGJ-e6-vOj" id="IFY-5L-IMX"/>
+                <outlet property="tfStaffOrder" destination="9ed-M1-rtI" id="eHn-D2-qUx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hr6-Jz-Ntg" customClass="RoundImageView" customModule="Laide" customModuleProvider="target">
+                    <rect key="frame" x="20" y="40" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="7rZ-uv-6Av"/>
+                        <constraint firstAttribute="height" constant="180" id="cir-U5-Mtt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="90"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="氏名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZf-QN-J93">
+                    <rect key="frame" x="220" y="47.5" width="100" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="順番" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY0-cH-ccI">
+                    <rect key="frame" x="220" y="205.5" width="100" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役割" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBf-a6-Mwe">
+                    <rect key="frame" x="220" y="126.5" width="100" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性別" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccl-Wd-Zj6">
+                    <rect key="frame" x="220" y="87" width="100" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="記入してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGJ-e6-vOj">
+                    <rect key="frame" x="330" y="40" width="250" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="W7Q-KK-ain"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De5-LG-wnc">
+                    <rect key="frame" x="330" y="81.5" width="250" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <state key="normal" title="未登録"/>
+                    <connections>
+                        <action selector="onGenderSelect:" destination="-1" eventType="touchUpInside" id="h2f-6G-CoF"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ulU-pZ-PMP">
+                    <rect key="frame" x="100" y="260" width="400" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JF-3a-C17" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                            <color key="backgroundColor" red="0.066666666669999999" green="0.1647058824" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="70" maxY="0.0"/>
+                            <state key="normal" title="登録 ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onRegister:" destination="-1" eventType="touchUpInside" id="Nem-F5-f9u"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOm-T8-XsT" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                            <rect key="frame" x="200" y="0.0" width="0.0" height="40"/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.3483491246" blue="0.28368418690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                            <state key="normal" title="削除">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onDelete:" destination="-1" eventType="touchUpInside" id="FTx-7t-0Kh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhk-n9-gaC" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                            <rect key="frame" x="225" y="0.0" width="175" height="40"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onClose:" destination="-1" eventType="touchUpInside" id="m8e-oe-3zb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="1fx-hf-ft3"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe9-i9-FsO">
+                    <rect key="frame" x="330" y="121" width="250" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <state key="normal" title="未登録"/>
+                    <connections>
+                        <action selector="onRoleSelect:" destination="-1" eventType="touchUpInside" id="MuF-AF-PBu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M29-d2-Z2K" customClass="RoundButton" customModule="Laide" customModuleProvider="target">
+                    <rect key="frame" x="150" y="170" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.63715274209999995" blue="0.54859352549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="W5F-RJ-5c5"/>
+                        <constraint firstAttribute="height" constant="50" id="wwB-Fh-aTI"/>
+                    </constraints>
+                    <state key="normal" image="icon_add_plus_white.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onTakePhoto:" destination="-1" eventType="touchUpInside" id="Thq-sg-JSn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会社" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPW-ul-pKo">
+                    <rect key="frame" x="220" y="166" width="100" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="記入してください" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-M1-rtI">
+                    <rect key="frame" x="330" y="198" width="250" height="34"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4R-C2-Hnu">
+                    <rect key="frame" x="330" y="160.5" width="250" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <state key="normal" title="未登録"/>
+                    <connections>
+                        <action selector="onCompanySelect:" destination="-1" eventType="touchUpInside" id="Ww5-2J-5ao"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IY0-cH-ccI" firstAttribute="leading" secondItem="WZf-QN-J93" secondAttribute="leading" id="4Qb-b2-42A"/>
+                <constraint firstItem="Y4R-C2-Hnu" firstAttribute="trailing" secondItem="NGJ-e6-vOj" secondAttribute="trailing" id="5sp-1M-bi4"/>
+                <constraint firstItem="WZf-QN-J93" firstAttribute="centerY" secondItem="NGJ-e6-vOj" secondAttribute="centerY" id="6oU-y5-M0n"/>
+                <constraint firstItem="9ed-M1-rtI" firstAttribute="trailing" secondItem="NGJ-e6-vOj" secondAttribute="trailing" id="74V-Xy-h5T"/>
+                <constraint firstItem="WZf-QN-J93" firstAttribute="leading" secondItem="Hr6-Jz-Ntg" secondAttribute="trailing" constant="20" id="8Dc-Eg-qaz"/>
+                <constraint firstItem="De5-LG-wnc" firstAttribute="centerY" secondItem="Ccl-Wd-Zj6" secondAttribute="centerY" id="8TS-i5-jc2"/>
+                <constraint firstItem="Ccl-Wd-Zj6" firstAttribute="trailing" secondItem="WZf-QN-J93" secondAttribute="trailing" id="CiT-Qm-8FM"/>
+                <constraint firstItem="Hr6-Jz-Ntg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="EE9-AF-A9g"/>
+                <constraint firstItem="qe9-i9-FsO" firstAttribute="leading" secondItem="BBf-a6-Mwe" secondAttribute="trailing" constant="10" id="ETZ-Ks-kUK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NGJ-e6-vOj" secondAttribute="trailing" constant="20" id="Era-Sg-NJL"/>
+                <constraint firstItem="BBf-a6-Mwe" firstAttribute="top" secondItem="Ccl-Wd-Zj6" secondAttribute="bottom" constant="20" id="H68-f4-Adz"/>
+                <constraint firstItem="Y4R-C2-Hnu" firstAttribute="leading" secondItem="wPW-ul-pKo" secondAttribute="trailing" constant="10" id="HBC-fG-tQT"/>
+                <constraint firstItem="9ed-M1-rtI" firstAttribute="leading" secondItem="NGJ-e6-vOj" secondAttribute="leading" id="Ijo-Qr-U4d"/>
+                <constraint firstItem="qe9-i9-FsO" firstAttribute="trailing" secondItem="NGJ-e6-vOj" secondAttribute="trailing" id="KgJ-2a-dBW"/>
+                <constraint firstItem="9ed-M1-rtI" firstAttribute="centerY" secondItem="IY0-cH-ccI" secondAttribute="centerY" id="KkW-AN-qq8"/>
+                <constraint firstItem="IY0-cH-ccI" firstAttribute="top" secondItem="wPW-ul-pKo" secondAttribute="bottom" constant="20" id="Kkn-af-Jiy"/>
+                <constraint firstItem="ulU-pZ-PMP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NhS-y9-upT"/>
+                <constraint firstItem="M29-d2-Z2K" firstAttribute="trailing" secondItem="Hr6-Jz-Ntg" secondAttribute="trailing" id="PPj-zg-tXW"/>
+                <constraint firstItem="qe9-i9-FsO" firstAttribute="centerY" secondItem="BBf-a6-Mwe" secondAttribute="centerY" id="U3c-XM-lOU"/>
+                <constraint firstItem="NGJ-e6-vOj" firstAttribute="leading" secondItem="WZf-QN-J93" secondAttribute="trailing" constant="10" id="X9V-GI-f94"/>
+                <constraint firstItem="wPW-ul-pKo" firstAttribute="leading" secondItem="WZf-QN-J93" secondAttribute="leading" id="aq3-pi-vcS"/>
+                <constraint firstItem="NGJ-e6-vOj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="av9-3f-Bzc"/>
+                <constraint firstItem="ulU-pZ-PMP" firstAttribute="top" secondItem="Hr6-Jz-Ntg" secondAttribute="bottom" constant="40" id="bfl-f0-hdJ"/>
+                <constraint firstItem="BBf-a6-Mwe" firstAttribute="trailing" secondItem="WZf-QN-J93" secondAttribute="trailing" id="bs8-5U-tBW"/>
+                <constraint firstItem="Y4R-C2-Hnu" firstAttribute="centerY" secondItem="wPW-ul-pKo" secondAttribute="centerY" id="dNg-a4-2R1"/>
+                <constraint firstItem="Ccl-Wd-Zj6" firstAttribute="top" secondItem="WZf-QN-J93" secondAttribute="bottom" constant="20" id="dXj-Qf-ZkZ"/>
+                <constraint firstItem="wPW-ul-pKo" firstAttribute="trailing" secondItem="WZf-QN-J93" secondAttribute="trailing" id="e9c-HO-1o5"/>
+                <constraint firstItem="Ccl-Wd-Zj6" firstAttribute="leading" secondItem="WZf-QN-J93" secondAttribute="leading" id="ewP-n7-ayn"/>
+                <constraint firstItem="Hr6-Jz-Ntg" firstAttribute="top" secondItem="NGJ-e6-vOj" secondAttribute="top" id="fjN-eb-aUi"/>
+                <constraint firstItem="IY0-cH-ccI" firstAttribute="trailing" secondItem="WZf-QN-J93" secondAttribute="trailing" id="mDc-V8-CVw"/>
+                <constraint firstAttribute="bottom" secondItem="ulU-pZ-PMP" secondAttribute="bottom" constant="20" id="tXb-wh-GtE"/>
+                <constraint firstItem="De5-LG-wnc" firstAttribute="leading" secondItem="Ccl-Wd-Zj6" secondAttribute="trailing" constant="10" id="vQJ-iw-pdl"/>
+                <constraint firstItem="wPW-ul-pKo" firstAttribute="top" secondItem="BBf-a6-Mwe" secondAttribute="bottom" constant="20" id="w23-Iy-OLc"/>
+                <constraint firstItem="BBf-a6-Mwe" firstAttribute="leading" secondItem="WZf-QN-J93" secondAttribute="leading" id="wtT-w2-ImI"/>
+                <constraint firstItem="De5-LG-wnc" firstAttribute="trailing" secondItem="NGJ-e6-vOj" secondAttribute="trailing" id="xPg-2w-uxe"/>
+                <constraint firstItem="M29-d2-Z2K" firstAttribute="bottom" secondItem="Hr6-Jz-Ntg" secondAttribute="bottom" id="znt-NK-MKs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="152.17391304347828" y="-86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_add_plus_white.png" width="100" height="100"/>
+        <image name="icon_no_avatar.png" width="60" height="60"/>
+    </resources>
+</document>

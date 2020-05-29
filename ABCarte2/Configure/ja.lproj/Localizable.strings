@@ -1,0 +1,181 @@
+/* 
+  Localizable.strings
+  ABCarte2
+
+  Created by Long on 2019/05/14.
+  Copyright © 2019 Oluxe. All rights reserved.
+*/
+
+//general
+"OK" = "OK";
+"Cancel" = "取消";
+"English" = "英語";
+"Japanese" = "日本語";
+"Chinese" = "中国語";
+"Please select the content" = "内容を選択してください";
+"Register" = "登録";
+"Save" = "保存";
+"Undefined" = "不明";
+"Male" = "男性";
+"Female" = "女性";
+"years old" = "歳";
+"Update" = "更新";
+"Unregistered" = "未登録";
+"Edit" = "編集";
+"Message" = "メッセージ";
+
+//login scene
+"LOGIN" = "ログイン";
+"OR" = "若しくは";
+"LOGIN BY QR CODE" = "QR コードでログイン";
+"Other ways to contact us" = "その他の連絡の方法が出来ます";
+"Please input User ID" = "ユーザーIDを入力";
+"Please input Password" = "パスワードを入力";
+"WRONG QR CODE" = "QRコードが違います";
+"LOGIN WITH USERNAME" = "でログインしてよろしいですか？";
+
+//main scene
+"Show All" = "全件表示";
+"Add Customer" = "新規登録";
+"Calendar" = "カレンダー";
+"Select" = "選択";
+"Search" = "検索";
+"Messenger" = "送受信";
+"Logout" = "ログアウト";
+"Setting" = "設定";
+"Sync" = "同期";
+"Stamp Reg" = "スタンプ登録";
+"Shop" = "ショップ";
+"Video" = "ビデオ";
+"Document" = "ドキュメント";
+"Info" = "情報";
+"Complete" = "完了";
+"Delete" = "削除";
+"Please input Customer's Surname" = "お客様の姓（かな）を入力してください";
+"Name" = "名前";
+"Sex" = "性別";
+"Last Visited" = "最新来店日";
+"Birthdate" = "生年月日";
+"Cus's No" = "顧客番号";
+"Total" = "登録件数";
+"Customer Management" = "顧客管理";
+"Contact" = "連絡先";
+"First Visited" = "初回来店日";
+"View / Edit" = "表示 / 編集";
+
+//setting scene
+"Language" = "言語設定";
+"Theme" = "テーマ設定";
+"Secret Memo" = "シークレット設定";
+"Device" = "デバイス情報";
+"Account" = "ユーザー情報";
+"Application Info" = "アプリ情報";
+"Application Theme" = "アプリテーマ";
+"Secret Memo Password" = "シークレットメモのパスワード";
+"Current Password" = "現在のパスワード";
+"New Password" = "新しいパスワード";
+"Device Info" = "デバイス情報";
+"Model" = "iPad 機種";
+"iOS Version" = "iOS バージョン";
+"Device ID" = "デバイスID";
+"Internet Status" = "インターネット環境";
+"Erase Device" = "データ引き継ぎ";
+"Do you want to erase the data from this Device" = "データ引継ぎを行いますか?";
+"To erase the data, tap [OK] and enter the password. Please log into App with your new iPad after you completely logout." = "データを引継ぐ場合は [OK] をタップして、パスワードを入力してください。自動ログアウト後に新しい iPad で アプリ にログインしてください。";
+"User Info" = "ユーザー情報";
+"User ID" = "ユーザーID";
+"Username" = "ユーザー名";
+"Free Memo" = "フリーメモ";
+"Stamp Memo" = "スタンプメモ";
+"No Data" = "データーがない";
+"Used" = "使用容量";
+"Remained" = "空き容量";
+"Over" = "超えた容量";
+"Drawing Type" = "描画タイプ";
+
+//calendar scene
+"Calendar" = "カレンダー";
+"Date" = "日付指定";
+"History of Visit" = "来店履歴";
+"Day" = "日";
+"Month" = "月";
+"Year" = "年";
+
+//stamp registration scene
+"Stamp Memo Registration" = "スタンプ登録";
+
+//reg/edit scene
+"Customer Info Registration/Modification" = "顧客情報を登録/編集";
+"Customer's Name" = "名　前";
+"Customer's Name (Kana)" = "か　な";
+"Customer Number" = "顧客番号";
+"Emergency Contact No" = "緊急連絡先";
+"Responsible" = "担当者";
+"Modify" = "編集";
+"Created Date" = "作成日";
+"Last Modified Date" = "最終更新日";
+"Sex" = "性別";
+"Address" = "住所";
+"E-mail" = "メール";
+"Blood Type" = "血液型";
+"Rank" = "ランク";
+"Hobby" = "趣味";
+"Photo Insert" = "画像挿入";
+"Convert" = "住所変換";
+"Note 1" = "備考 1";
+"Note 2" = "備考 2";
+"Note" = "備考";
+"Please input secret memo password" = "暗証番号を入力";
+"Access" = "アクセス";
+"Postal Code" = "郵便番号";
+"Building Name - Room No" = "マンション・建物名・号室";
+"Prefecture" = "都道府県";
+"City" = "市区町村";
+"Please input 7 numbers of Postal Code" = "郵便番号は7桁で入力してください";
+"The address can not be found" = "該当の住所が見つかりません";
+"A new data of this customer has existed on the Server, Do you want to refresh to get new data?" = "こちらの顧客の情報は、すでに別のスタッフにより編集されています。同期にて新しいデータを取得後、再度編集をお願いします。";
+"Take a Photo" = "写真を撮る";
+"Camera not found" = "カメラが見つかりません";
+"Choose Photo from Device" = "デバイスから写真を選択";
+"Choose Photo from Gallery" = "ギャラリーから写真を選択";
+"Delete Representative Image" = "代表画像を削除";
+"Please input last name" = "姓を入力";
+"Please input first name" = "名を入力";
+"Last Name" = "せい";
+"First Name" = "めい";
+"Please input" = "入力";
+"Please input contact number" = "電話番号入力";
+"Please input name" = "名前を入力";
+"Basic" = "基本事項";
+"Private Info" = "プライベート情報";
+"Remarks" = "備考";
+
+//carte list
+"List of Karte" = "カルテ一覧";
+"Image Management" = "画像管理";
+"Drawing" = "描画画面";
+"Comparison" = "比較画面";
+"List of Image" = "写真一覧";
+"Day Visit" = "来店日 :";
+
+//carte image list
+"Take Photo" = "写真を撮る";
+"Camera Roll" = "カメラロール";
+
+//comparison
+"Left Right" = "左右比較";
+"Up Down" = "上下比較";
+"Tranmission" = "透過比較";
+
+//stamp register scene
+"Title Update" = "タイトル更新";
+"Add New" = "新規作成";
+
+//Chat
+"Send Karte's Photos" = "カルテ写真送信";
+
+//Staff Management
+"Staff Management" = "スタッフ管理";
+
+//Bed Management
+"Bed Management" = "設備管理";

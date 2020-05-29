@@ -1,0 +1,337 @@
+PODS:
+  - Alamofire (4.9.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - AMPopTip (4.1.0)
+  - BadgeSwift (8.0.0)
+  - BarcodeScanner (4.1.3)
+  - Cache (4.2.0)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - CITreeView (1.6.1)
+  - CocoaLumberjack (3.6.0):
+    - CocoaLumberjack/Core (= 3.6.0)
+  - CocoaLumberjack/Core (3.6.0)
+  - ConnectyCube (1.7.0)
+  - EFColorPicker (5.1.0)
+  - Firebase/Core (6.9.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.1.2)
+  - Firebase/CoreOnly (6.9.0):
+    - FirebaseCore (= 6.3.0)
+  - FirebaseAnalytics (6.1.2):
+    - FirebaseCore (~> 6.3)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.1.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (6.3.0):
+    - FirebaseCoreDiagnostics (~> 1.0)
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+  - FirebaseCoreDiagnostics (1.1.0):
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleDataTransportCCTSupport (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+  - FirebaseCoreDiagnosticsInterop (1.0.0)
+  - FirebaseInstanceID (4.2.5):
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/UserDefaults (~> 6.0)
+  - FLAnimatedImage (1.0.12)
+  - GoogleAppMeasurement (6.1.2):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - GoogleDataTransport (2.0.0)
+  - GoogleDataTransportCCTSupport (1.1.0):
+    - GoogleDataTransport (~> 2.0)
+    - nanopb
+  - GoogleUtilities/AppDelegateSwizzler (6.3.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.3.1)
+  - GoogleUtilities/Logger (6.3.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.3.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.3.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.3.1)"
+  - GoogleUtilities/Reachability (6.3.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.3.1):
+    - GoogleUtilities/Logger
+  - Hue (3.0.1)
+  - HueKit (1.0.1)
+  - Imaginary (3.0.3):
+    - Cache (~> 4.0)
+  - IQKeyboardManagerSwift (6.5.1)
+  - LetterAvatarKit (1.1.9)
+  - LGButton (1.1.6)
+  - Lightbox (2.1.2):
+    - Hue (~> 3.0)
+    - Imaginary (~> 3.0)
+  - lottie-ios (3.1.3)
+  - MMPlayerView (5.0.8)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - PDFGenerator (3.0.0)
+  - Pickle (1.4.0)
+  - PINCache (2.3)
+  - PINRemoteImage (2.1.4):
+    - PINRemoteImage/FLAnimatedImage (= 2.1.4)
+  - PINRemoteImage/Core (2.1.4):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/FLAnimatedImage (2.1.4):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
+  - ReachabilitySwift (4.3.1)
+  - Realm (3.19.0):
+    - Realm/Headers (= 3.19.0)
+  - Realm/Headers (3.19.0)
+  - RealmSwift (3.19.0):
+    - Realm (= 3.19.0)
+  - Reusable (4.0.5):
+    - Reusable/Storyboard (= 4.0.5)
+    - Reusable/View (= 4.0.5)
+  - Reusable/Storyboard (4.0.5)
+  - Reusable/View (4.0.5)
+  - SDWebImage (5.2.2):
+    - SDWebImage/Core (= 5.2.2)
+  - SDWebImage/Core (5.2.2)
+  - SlackTextViewController (1.9.6)
+  - SnapKit (5.0.1)
+  - SwiftDate (5.1.0)
+  - SwiftMessages (5.0.1):
+    - SwiftMessages/App (= 5.0.1)
+  - SwiftMessages/App (5.0.1)
+  - SwiftyJSON (5.0.0)
+  - TransitionButton (0.5.2)
+  - UXMPDFKit (0.7.2)
+  - YapDatabase (3.1.3):
+    - YapDatabase/Standard (= 3.1.3)
+  - YapDatabase/Standard (3.1.3):
+    - YapDatabase/Standard/Core (= 3.1.3)
+    - YapDatabase/Standard/Extensions (= 3.1.3)
+  - YapDatabase/Standard/Core (3.1.3):
+    - CocoaLumberjack
+  - YapDatabase/Standard/Extensions (3.1.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/ActionManager (= 3.1.3)
+    - YapDatabase/Standard/Extensions/AutoView (= 3.1.3)
+    - YapDatabase/Standard/Extensions/CloudCore (= 3.1.3)
+    - YapDatabase/Standard/Extensions/CloudKit (= 3.1.3)
+    - YapDatabase/Standard/Extensions/ConnectionPool (= 3.1.3)
+    - YapDatabase/Standard/Extensions/ConnectionProxy (= 3.1.3)
+    - YapDatabase/Standard/Extensions/CrossProcessNotification (= 3.1.3)
+    - YapDatabase/Standard/Extensions/FilteredView (= 3.1.3)
+    - YapDatabase/Standard/Extensions/FullTextSearch (= 3.1.3)
+    - YapDatabase/Standard/Extensions/Hooks (= 3.1.3)
+    - YapDatabase/Standard/Extensions/ManualView (= 3.1.3)
+    - YapDatabase/Standard/Extensions/Relationships (= 3.1.3)
+    - YapDatabase/Standard/Extensions/RTreeIndex (= 3.1.3)
+    - YapDatabase/Standard/Extensions/SearchResultsView (= 3.1.3)
+    - YapDatabase/Standard/Extensions/SecondaryIndex (= 3.1.3)
+    - YapDatabase/Standard/Extensions/View (= 3.1.3)
+  - YapDatabase/Standard/Extensions/ActionManager (3.1.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/AutoView
+  - YapDatabase/Standard/Extensions/AutoView (3.1.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/View
+  - YapDatabase/Standard/Extensions/CloudCore (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/CloudKit (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/ConnectionPool (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/ConnectionProxy (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/CrossProcessNotification (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/FilteredView (3.1.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/View
+  - YapDatabase/Standard/Extensions/FullTextSearch (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Hooks (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/ManualView (3.1.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/View
+  - YapDatabase/Standard/Extensions/Relationships (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/RTreeIndex (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/SearchResultsView (3.1.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/AutoView
+    - YapDatabase/Standard/Extensions/FullTextSearch
+  - YapDatabase/Standard/Extensions/SecondaryIndex (3.1.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/View (3.1.3):
+    - YapDatabase/Standard/Core
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - AMPopTip
+  - BadgeSwift
+  - BarcodeScanner (= 4.1.3)
+  - Charts
+  - CITreeView
+  - ConnectyCube
+  - EFColorPicker
+  - Firebase/Core
+  - HueKit
+  - IQKeyboardManagerSwift
+  - LetterAvatarKit (~> 1.1.7)
+  - LGButton
+  - Lightbox (~> 2.1.2)
+  - lottie-ios
+  - MMPlayerView
+  - PDFGenerator
+  - Pickle
+  - PINRemoteImage (~> 2.1.4)
+  - ReachabilitySwift
+  - RealmSwift
+  - Reusable (~> 4.0.5)
+  - SDWebImage
+  - SlackTextViewController (~> 1.9.6)
+  - SnapKit
+  - SwiftDate (~> 5.1.0)
+  - SwiftMessages (= 5.0.1)
+  - SwiftyJSON
+  - TransitionButton (from `https://github.com/AladinWay/TransitionButton.git`)
+  - UXMPDFKit
+  - YapDatabase (~> 3.1.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - AMPopTip
+    - BadgeSwift
+    - BarcodeScanner
+    - Cache
+    - Charts
+    - CITreeView
+    - CocoaLumberjack
+    - ConnectyCube
+    - EFColorPicker
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstanceID
+    - FLAnimatedImage
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - Hue
+    - HueKit
+    - Imaginary
+    - IQKeyboardManagerSwift
+    - LetterAvatarKit
+    - LGButton
+    - Lightbox
+    - lottie-ios
+    - MMPlayerView
+    - nanopb
+    - PDFGenerator
+    - Pickle
+    - PINCache
+    - PINRemoteImage
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - Reusable
+    - SDWebImage
+    - SlackTextViewController
+    - SnapKit
+    - SwiftDate
+    - SwiftMessages
+    - SwiftyJSON
+    - UXMPDFKit
+    - YapDatabase
+
+EXTERNAL SOURCES:
+  TransitionButton:
+    :git: https://github.com/AladinWay/TransitionButton.git
+
+CHECKOUT OPTIONS:
+  TransitionButton:
+    :commit: 95e52cc8a0919ca9b0b38dda0281194e53ead175
+    :git: https://github.com/AladinWay/TransitionButton.git
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  AMPopTip: fc50f5cea7743d1a03076dbd6a1a270f2e6b6d55
+  BadgeSwift: a81547ffde1f462bb5fc02e3fa3fdcbc1b888354
+  BarcodeScanner: fce1ad2b3f28286b1ab5091fe0979789618bee27
+  Cache: f28f8dd64b632155aabf9b3906b036a659048251
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  CITreeView: f7bcaa750a6d9e1a646f057bc581c4f146badb3b
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  ConnectyCube: ebca97c0b839cb8283f4abd562f7c1d01356ecae
+  EFColorPicker: 6fa37bd9cde0f8dc58762698f1e9809f554dfe6c
+  Firebase: 2d750c54cda57d5a6ae31212cfe5cc813c6be7e4
+  FirebaseAnalytics: 5d9ccbf46ed25d3ec9304d263f85bddf1e93e2d2
+  FirebaseCore: 8b2765c445d40db7137989b7146a3aa3f91b5529
+  FirebaseCoreDiagnostics: be4f7a09d02ab305f18de59a470412caddb64c2a
+  FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
+  FirebaseInstanceID: 550df9be1f99f751d8fcde3ac342a1e21a0e6c42
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GoogleAppMeasurement: 0ae90be1cc4dad40f4a27fc767ef59fa032ec87b
+  GoogleDataTransport: c8617c00e4f3eb9418e42ac0e8ac5241a9d555dd
+  GoogleDataTransportCCTSupport: 9f352523e8785a71f6754f51eeff09f49ec19268
+  GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
+  Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
+  HueKit: a255770053f7028907db3e84d5cdecc7837197e4
+  Imaginary: 9b45836a5af881f452a86e0a1215772ae4712d00
+  IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
+  LetterAvatarKit: 1d87ca816c4fedd77e3bf0142c5d0549918c9e97
+  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
+  Lightbox: 2dc267df8be2285bc7724cb11cbbf4aaaf59dced
+  lottie-ios: 496ac5cea1bbf1a7bd1f1f472f3232eb1b8d744b
+  MMPlayerView: 50d9d4d54ec31dffb137bc70d99dc22ab7c408e4
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  PDFGenerator: e00fd09ae8021e304b5672cf11bc28234fc626e7
+  Pickle: 28753955cbcd9cc1a7b44624e49c61e182f3bbd7
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  Realm: 995d585bcf699aaff226715886c849a29dd3d07f
+  RealmSwift: 35f284a537989f2187b413e5917091948cb87a3f
+  Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
+  SDWebImage: 5fcdb02cc35e05fc35791ec514b191d27189f872
+  SlackTextViewController: b854e62c1c156336bc4fd409c6ca79b5773e8f9d
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  SwiftMessages: 32ce3cfc8388b41aae56ff4853cc752a20101147
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TransitionButton: fb271583d9c9e4bb116b97103047e5157653f233
+  UXMPDFKit: 3cd146f9129a1a33160b1c0f33dd70ecafe60ccf
+  YapDatabase: 36e10c3059d33686951eba566fa15c0fce2497ed
+
+PODFILE CHECKSUM: 48efa91925f09209cf912ce2290eeafca7e2f50b
+
+COCOAPODS: 1.9.1
